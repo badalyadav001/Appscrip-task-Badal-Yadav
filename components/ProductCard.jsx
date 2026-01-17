@@ -1,11 +1,10 @@
-
 export default function ProductCard({ product }) {
   return (
     <article className="product-card">
       <img
         src={product.image}
         alt={product.title}
-        className="product-image"
+        style={{ width: '100%', height: '200px', objectFit: 'cover' }}
       />
 
       <h2 className="product-title">{product.title}</h2>
